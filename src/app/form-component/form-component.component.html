@@ -1,0 +1,21 @@
+<form [formGroup]="formObj" (ngSubmit)="submit()">
+    First name:<input type="text" formControlName="firstName" />
+    <br>
+    Last name:<input type="text" formControlName="lastName" />
+    <br>
+    Email:<input type="email" formControlName="email" />
+    <br>
+    Password:<input type="password" formControlName="password" />
+    <br>
+    Contact number:<input type="number" formControlName="phone" />
+    <br>
+    Age: <select formControlName="age">
+        <option value="5">5</option>
+        <option value="10">10</option>
+        <option value="15">15</option>
+        <option value="20">20</option>
+        <option value="25">25</option>
+    </select>
+    <br>
+    <input type="submit" value="SAVE"/>
+</form>
